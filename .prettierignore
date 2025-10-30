@@ -1,0 +1,5 @@
+# Ignore Bootstrap vendor SCSS
+src/scss/bootstrap/**
+
+# Ignore dist output
+dist/**
