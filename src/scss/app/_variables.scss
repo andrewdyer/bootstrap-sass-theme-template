@@ -3,17 +3,17 @@
 // --------------------------------------------------------------------------
 // This file defines **custom Sass variables** and **overrides** for Bootstrap.
 // It is the single source of truth for all theme-level design values.
-//
+
 // 🧩 Purpose
 // - Override Bootstrap's default variables (e.g. $primary, $font-family-base).
 // - Define new custom variables for use in the app layer.
 // - Serve as the design token entry point for theming and brand customization.
-//
+
 // ⚙️ Usage
 // - Variables defined here are loaded **before** Bootstrap in `styles.scss`.
 // - Commented examples below can be uncommented and customized as needed.
 // - Never edit variables directly inside the vendored `bootstrap/` folder.
-//
+
 // --------------------------------------------------------------------------
 // 🔧 Bootstrap Variable Overrides
 // --------------------------------------------------------------------------
