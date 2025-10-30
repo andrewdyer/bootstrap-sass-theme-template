@@ -1,0 +1,41 @@
+// --------------------------------------------------------------------------
+// _variables.scss
+// --------------------------------------------------------------------------
+// This file defines **custom Sass variables** and **overrides** for Bootstrap.
+// It is the single source of truth for all theme-level design values.
+//
+// 🧩 Purpose
+// - Override Bootstrap's default variables (e.g. $primary, $font-family-base).
+// - Define new custom variables for use in the app layer.
+// - Serve as the design token entry point for theming and brand customization.
+//
+// ⚙️ Usage
+// - Variables defined here are loaded **before** Bootstrap in `styles.scss`.
+// - Commented examples below can be uncommented and customized as needed.
+// - Never edit variables directly inside the vendored `bootstrap/` folder.
+//
+// --------------------------------------------------------------------------
+// 🔧 Bootstrap Variable Overrides
+// --------------------------------------------------------------------------
+
+// $primary:   #4c6ef5; // Example: brand primary color
+// $secondary: #6c757d; // Example: secondary accent color
+
+// --------------------------------------------------------------------------
+// 🎨 Custom App Variables
+// --------------------------------------------------------------------------
+
+// $brand-gradient-start: #4c6ef5;
+// $brand-gradient-end:   #22b8cf;
+
+// $radius-md: 0.375rem;
+// $radius-lg: 0.5rem;
+
+// $shadow-card: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+
+// --------------------------------------------------------------------------
+// 📚 Notes
+// --------------------------------------------------------------------------
+// Keep overrides minimal and well-documented.
+// For larger sets of variables (e.g. colors, spacing, typography), consider
+// splitting them into partials under `app/variables/` and importing them here.

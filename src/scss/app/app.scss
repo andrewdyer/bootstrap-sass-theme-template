@@ -1,0 +1,43 @@
+// --------------------------------------------------------------------------
+// app.scss
+// --------------------------------------------------------------------------
+// This file serves as the **custom extension layer** for the design system.
+//
+// 🧩 Purpose
+// - Define additional Sass beyond Bootstrap — such as new components,
+//   layout utilities, helper classes, and brand-specific styles.
+// - Keep all project-specific styles separate from the vendored Bootstrap code.
+// - Provide a structured place for users to extend or override the design system.
+//
+// ⚙️ Usage
+// - Imported after Bootstrap in `styles.scss`.
+// - Styles declared here will cascade **on top** of the Bootstrap base.
+// - Can safely use variables defined in `app/_variables.scss`.
+// - Do not import Bootstrap here directly.
+//
+// --------------------------------------------------------------------------
+// 📁 Suggested Folder Structure (if expanded later)
+// --------------------------------------------------------------------------
+// app/
+// ├── _variables.scss     // Bootstrap overrides & design tokens
+// ├── _mixins.scss        // Custom mixins (optional)
+// ├── _utilities.scss     // Extra helper classes
+// ├── components/         // Custom or extended UI components
+// └── app.scss            // This file — imports all of the above
+//
+// --------------------------------------------------------------------------
+// 🚀 Imports
+// --------------------------------------------------------------------------
+// Example (uncomment or extend as needed):
+//
+// @import "utilities";
+// @import "components/buttons";
+// @import "components/cards";
+//
+// --------------------------------------------------------------------------
+// 📚 Notes
+// --------------------------------------------------------------------------
+// - Keep this file modular — import partials rather than writing large blocks.
+// - Organize components logically under `app/components/`.
+// - Avoid modifying vendored Bootstrap source; layer your changes here.
+// - When publishing a theme, this is where custom brand styles should live.
