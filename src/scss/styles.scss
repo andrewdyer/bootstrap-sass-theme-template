@@ -1,1 +1,25 @@
+// --------------------------------------------------------------------------
+//  styles.scss
+// --------------------------------------------------------------------------
+// This is the **main Sass entry point** for the project.
+//
+// 🧩 Purpose
+// - Defines the global load order for all Sass sources.
+// - Combines the Bootstrap framework and custom app styles into one output.
+// - Ensures design variables and overrides are applied before Bootstrap compiles.
+//
+// ⚙️ Build Output
+// - Compiled to `/dist/styles.css` via the Sass build process.
+// - Used by consuming projects to import a single prebuilt CSS file.
+//
+// --------------------------------------------------------------------------
+// 1. Variables
+//    Custom theme tokens and Bootstrap variable overrides.
+// --------------------------------------------------------------------------
+@import "app/variables";
+
+// --------------------------------------------------------------------------
+// 2. Bootstrap
+//    Vendored framework source (never edit directly).
+// --------------------------------------------------------------------------
 @import "bootstrap/bootstrap";
