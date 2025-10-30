@@ -1,0 +1,11 @@
+{
+  "name": "bootstrap-sass-template",
+  "description": "A template for building consistent, token-driven themes using the Bootstrap framework and the Sass preprocessor, with a modular and scalable architecture for design systems.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewdyer/bootstrap-sass-template.git"
+  },
+  "homepage": "https://github.com/andrewdyer/bootstrap-sass-template",
+  "type": "module"
+}
