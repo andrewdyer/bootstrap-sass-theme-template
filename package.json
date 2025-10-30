@@ -7,5 +7,14 @@
     "url": "https://github.com/andrewdyer/bootstrap-sass-template.git"
   },
   "homepage": "https://github.com/andrewdyer/bootstrap-sass-template",
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "dev": "sass --watch src/scss/styles.scss dist/styles.css --no-source-map",
+    "build": "sass src/scss/styles.scss dist/styles.css --no-source-map",
+    "build:min": "sass src/scss/styles.scss dist/styles.min.css --style=compressed --no-source-map",
+    "clean": "rm -rf dist && mkdir dist"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
 }
