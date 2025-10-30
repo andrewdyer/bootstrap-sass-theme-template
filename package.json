@@ -7,7 +7,6 @@
     "url": "https://github.com/andrewdyer/bootstrap-sass-template.git"
   },
   "homepage": "https://github.com/andrewdyer/bootstrap-sass-template",
-  "type": "module",
   "scripts": {
     "dev": "sass --watch src/scss/styles.scss dist/styles.css --no-source-map",
     "build": "sass src/scss/styles.scss dist/styles.css --no-source-map",
