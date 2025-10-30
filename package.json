@@ -11,7 +11,9 @@
     "dev": "sass --watch src/scss/styles.scss dist/styles.css --no-source-map",
     "build": "sass src/scss/styles.scss dist/styles.css --no-source-map",
     "build:min": "sass src/scss/styles.scss dist/styles.min.css --style=compressed --no-source-map",
-    "clean": "rm -rf dist && mkdir dist"
+    "clean": "rm -rf dist && mkdir dist",
+    "format": "prettier --write '**/*.{scss,css,js,json,md}'",
+    "lint": "stylelint '**/*.scss'"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
