@@ -6,6 +6,13 @@
     "url": "https://github.com/andrewdyer/bootstrap-sass-theme-template.git"
   },
   "homepage": "https://github.com/andrewdyer/bootstrap-sass-theme-template",
+  "main": "dist/styles.css",
+  "style": "dist/styles.css",
+  "sass": "src/scss/styles.scss",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "dev": "sass --watch src/scss/styles.scss dist/styles.css --no-source-map",
     "build": "sass src/scss/styles.scss dist/styles.css --no-source-map",
