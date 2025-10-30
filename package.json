@@ -15,8 +15,10 @@
   ],
   "scripts": {
     "dev": "sass --watch src/scss/styles.scss dist/css/styles.css --no-source-map",
-    "build": "npm run clean && sass src/scss/styles.scss dist/css/styles.css --no-source-map",
-    "build:min": "npm run clean && sass src/scss/styles.scss dist/css/styles.min.css --style=compressed --no-source-map",
+    "build:sass": "sass src/scss/styles.scss dist/css/styles.css --no-source-map",
+    "build:prefix": "postcss dist/css/styles.css --use autoprefixer -o dist/css/styles.css",
+    "build": "npm run clean && npm run build:sass && npm run build:prefix",
+    "build:min": "npm run clean && sass src/scss/styles.scss dist/css/styles.min.css --style=compressed --no-source-map && postcss dist/css/styles.min.css --use autoprefixer -o dist/css/styles.min.css",
     "clean": "rimraf dist",
     "format": "prettier --write '**/*.{scss,css,js,json,md}'",
     "lint": "stylelint '**/*.scss'",
