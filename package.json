@@ -13,7 +13,8 @@
     "build:min": "sass src/scss/styles.scss dist/styles.min.css --style=compressed --no-source-map",
     "clean": "rm -rf dist && mkdir dist",
     "format": "prettier --write '**/*.{scss,css,js,json,md}'",
-    "lint": "stylelint '**/*.scss'"
+    "lint": "stylelint '**/*.scss'",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "husky": "^9.1.7",
