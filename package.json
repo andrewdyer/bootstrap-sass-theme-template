@@ -15,12 +15,13 @@
   ],
   "scripts": {
     "dev": "sass --watch src/scss/styles.scss dist/styles.css --no-source-map",
-    "build": "sass src/scss/styles.scss dist/styles.css --no-source-map",
-    "build:min": "sass src/scss/styles.scss dist/styles.min.css --style=compressed --no-source-map",
-    "clean": "rm -rf dist && mkdir dist",
+    "build": "npm run clean && sass src/scss/styles.scss dist/styles.css --no-source-map",
+    "build:min": "npm run clean && sass src/scss/styles.scss dist/styles.min.css --style=compressed --no-source-map",
+    "clean": "rimraf dist",
     "format": "prettier --write '**/*.{scss,css,js,json,md}'",
     "lint": "stylelint '**/*.scss'",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "npm run clean && npm run build && npm run build:min"
   },
   "devDependencies": {
     "husky": "^9.1.7",
