@@ -6,17 +6,17 @@
     "url": "https://github.com/andrewdyer/bootstrap-sass-theme-template.git"
   },
   "homepage": "https://github.com/andrewdyer/bootstrap-sass-theme-template",
-  "main": "dist/styles.css",
-  "style": "dist/styles.css",
+  "main": "dist/css/styles.css",
+  "style": "dist/css/styles.css",
   "sass": "src/scss/styles.scss",
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
-    "dev": "sass --watch src/scss/styles.scss dist/styles.css --no-source-map",
-    "build": "npm run clean && sass src/scss/styles.scss dist/styles.css --no-source-map",
-    "build:min": "npm run clean && sass src/scss/styles.scss dist/styles.min.css --style=compressed --no-source-map",
+    "dev": "sass --watch src/scss/styles.scss dist/css/styles.css --no-source-map",
+    "build": "npm run clean && sass src/scss/styles.scss dist/css/styles.css --no-source-map",
+    "build:min": "npm run clean && sass src/scss/styles.scss dist/css/styles.min.css --style=compressed --no-source-map",
     "clean": "rimraf dist",
     "format": "prettier --write '**/*.{scss,css,js,json,md}'",
     "lint": "stylelint '**/*.scss'",
