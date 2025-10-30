@@ -7,3 +7,7 @@ A template for building consistent, token-driven themes using the Bootstrap fram
 ## ⚖️ License
 
 Licensed under the [MIT license](https://opensource.org/licenses/MIT) and is free for private or commercial projects.
+
+## ✨ Introduction
+
+This template provides a solid foundation for building theme-driven CSS using Bootstrap and Sass, designed to help you start quickly with a structured folder organization, token-based variables, and an automated build pipeline that outputs prefixed and minified CSS ready for production, allowing you to focus on creating and customizing themes without worrying about boilerplate setup.
