@@ -2,7 +2,6 @@
 module.exports = {
   extends: ['stylelint-config-standard-scss', 'stylelint-config-clean-order'],
   rules: {
-    indentation: 2,
     'max-nesting-depth': 3,
     'color-hex-length': 'short',
     'scss/dollar-variable-pattern': '^[_a-z0-9-]+$',
