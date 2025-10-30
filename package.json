@@ -7,14 +7,29 @@
     "url": "https://github.com/andrewdyer/bootstrap-sass-template.git"
   },
   "homepage": "https://github.com/andrewdyer/bootstrap-sass-template",
-  "type": "module",
   "scripts": {
     "dev": "sass --watch src/scss/styles.scss dist/styles.css --no-source-map",
     "build": "sass src/scss/styles.scss dist/styles.css --no-source-map",
     "build:min": "sass src/scss/styles.scss dist/styles.min.css --style=compressed --no-source-map",
-    "clean": "rm -rf dist && mkdir dist"
+    "clean": "rm -rf dist && mkdir dist",
+    "format": "prettier --write '**/*.{scss,css,js,json,md}'",
+    "lint": "stylelint '**/*.scss'",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "sass": "^1.93.2"
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.2",
+    "stylelint": "^16.25.0",
+    "stylelint-config-clean-order": "^7.0.0",
+    "stylelint-config-standard-scss": "^16.0.0",
+    "stylelint-scss": "^6.12.1"
+  },
+  "lint-staged": {
+    "*.scss": [
+      "prettier --write",
+      "stylelint --fix"
+    ]
   }
 }
