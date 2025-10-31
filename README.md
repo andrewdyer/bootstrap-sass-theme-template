@@ -12,6 +12,13 @@ Licensed under the [MIT license](https://opensource.org/licenses/MIT) and is fre
 
 This template provides a solid foundation for building theme-driven CSS using Bootstrap and Sass, designed to help you start quickly with a structured folder organization, token-based variables, and an automated build pipeline that outputs prefixed and minified CSS ready for production, allowing you to focus on creating and customizing themes without worrying about boilerplate setup.
 
+## 📋 Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- **[Node.js](https://nodejs.org/)**: Version 22.x (as specified in [.nvmrc](.nvmrc)) is required.
+- **[npm](https://www.npmjs.com/)**: Dependency management tool, version 9.x or higher.
+
 ## 🛠️ Features
 
 This template includes a comprehensive toolset for building and maintaining consistent CSS themes:
