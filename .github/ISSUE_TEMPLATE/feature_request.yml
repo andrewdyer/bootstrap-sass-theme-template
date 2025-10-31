@@ -1,0 +1,90 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: '[Feature]: '
+labels: ['enhancement']
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: Please provide detailed information about the proposed feature or enhancement.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Preflight Checklist
+      description: Please ensure these steps have been completed before submitting
+      options:
+        - label: I have searched existing issues to ensure this feature hasn't already been requested
+          required: true
+        - label: I have checked the documentation and README
+          required: true
+        - label: This feature would be useful for multiple users or use cases
+          required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of the feature you'd like to see
+      placeholder: What would you like to be able to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve?
+      placeholder: Describe the limitation or missing functionality you're trying to address
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How would you like this feature to work?
+      placeholder: Describe your ideal solution — for example, new variables, mixins, utilities, or build options
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other approaches or workarounds have you tried?
+      placeholder: Describe any custom Sass code or other approaches you've used
+
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: What kind of improvement is this?
+      options:
+        - New Sass variable or utility
+        - Component enhancement
+        - Build or tooling improvement
+        - Documentation update
+        - Performance optimization
+        - Accessibility improvement
+        - Design consistency enhancement
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: What are some specific scenarios where this feature would be useful?
+      placeholder: |
+        1. When customizing styles across breakpoints
+        2. When theming components for a new project
+        3. When improving CSS output for production
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, mockups, or examples about the feature request
+      placeholder: Links to similar projects, code samples, or design references

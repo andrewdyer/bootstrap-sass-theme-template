@@ -1,0 +1,79 @@
+name: Bug Report
+description: Report a bug or issue
+title: '[Bug]: '
+labels: ['bug']
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: Please provide as much detail as possible to help identify and resolve the issue.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Preflight Checklist
+      description: Please ensure these steps have been completed before submitting
+      options:
+        - label: I have searched existing issues to ensure this bug hasn't already been reported
+          required: true
+        - label: I have reproduced this issue with the latest version
+          required: true
+        - label: I have checked the documentation and README for known issues
+          required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the issue
+      placeholder: Describe what you expected to happen vs. what actually happened
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Modify a Sass variable
+        2. Run `npm run build`
+        3. Observe incorrect or missing styles
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Please provide information about your environment
+      placeholder: |
+        - OS: [e.g. macOS 14.0, Windows 11, Ubuntu 22.04]
+        - Node.js version: [e.g. 22.12.0]
+        - npm version: [e.g. 10.5.0]
+        - Browser (if applicable): [e.g. Chrome 120, Firefox 122]
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Output
+      description: If applicable, add any terminal or console output
+      placeholder: Paste relevant error messages, Sass compiler logs, or stack traces here
+      render: shell
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the issue
+      placeholder: Screenshots, related issues, or workarounds you've tried
+
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: Possible Solution
+      description: If you have ideas on how to fix this, please share them
+      placeholder: Any suggestions for how this could be fixed or what might be causing it
