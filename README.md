@@ -22,6 +22,7 @@ This template includes a comprehensive toolset for building and maintaining cons
 - [Prettier](https://prettier.io/) for consistent code formatting across the codebase.
 - [Stylelint](https://stylelint.io/) with [`stylelint-config-standard-scss`](https://github.com/stylelint-scss/stylelint-config-standard-scss) and [`stylelint-config-clean-order`](https://github.com/anton-rudeshko/stylelint-config-clean-order) for enforcing consistent SCSS conventions and property order.
 - [Husky](https://typicode.github.io/husky/#/) and [lint-staged](https://github.com/okonet/lint-staged) for running linters and formatters on staged files before commits.
+* CI (Continuous Integration) setup with [GitHub Actions](https://github.com/features/actions) for automated linting, building, and publishing workflows.
 
 ## 🚀 Getting Started
 
