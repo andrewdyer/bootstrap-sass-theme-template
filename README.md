@@ -1,4 +1,4 @@
-![Bootstrap + Sass Theme Template](https://raw.githubusercontent.com/andrewdyer/public-assets/refs/heads/main/images/covers/bootstrap-sass-theme-template.png)
+![Bootstrap + Sass Theme Template](https://public-assets.andrewdyer.rocks/images/covers/bootstrap-sass-theme-template.png)
 
 # Bootstrap + Sass Theme Template
 
