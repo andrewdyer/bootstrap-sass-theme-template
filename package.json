@@ -24,7 +24,7 @@
     "watch:sass:min": "sass --watch src/scss/styles.scss dist/css/styles.min.css --style=compressed --no-source-map",
     "watch:postcss": "onchange 'dist/css/styles.css' -- postcss dist/css/styles.css -o dist/css/styles.css",
     "watch:postcss:min": "onchange 'dist/css/styles.min.css' -- postcss dist/css/styles.min.css -o dist/css/styles.min.css",
-    "dev": "npm run watch:sass & npm run watch:sass:min & npm run watch:postcss & npm run watch:postcss:min",
+    "dev": "npm run watch:sass && npm run watch:sass:min && npm run watch:postcss && npm run watch:postcss:min",
     "format": "prettier --write '**/*.{scss,css,js,json,md}'",
     "format:check": "prettier --check '**/*.{scss,css,js,json,md}'",
     "lint": "stylelint '**/*.scss'",
