@@ -16,16 +16,16 @@
   "scripts": {
     "clean": "rimraf dist",
     "build:sass": "sass src/scss/styles.scss dist/css/styles.css --no-source-map",
-    "build:prefix": "postcss dist/css/styles.css -o dist/css/styles.css",
-    "build:min": "sass src/scss/styles.scss dist/css/styles.min.css --style=compressed --no-source-map && postcss dist/css/styles.min.css -o dist/css/styles.min.css",
-    "build": "npm-run-all clean build:sass build:prefix",
-    "watch:sass": "sass --watch src/scss/styles.scss dist/css/styles.css --no-source-map",
-    "watch:prefix": "onchange 'dist/css/styles.css' -- postcss dist/css/styles.css -o dist/css/styles.css",
-    "dev": "npm-run-all --parallel watch:sass watch:prefix",
+    "build:sass:min": "sass src/scss/styles.scss dist/css/styles.min.css --style=compressed --no-source-map",
+    "build:postcss": "postcss dist/css/styles.css -o dist/css/styles.css",
+    "build:postcss:min": "postcss dist/css/styles.min.css -o dist/css/styles.min.css",
+    "build": "npm run clean && npm run build:sass && npm run build:sass:min && npm run build:postcss && npm run build:postcss:min",
+    "watch": "sass --watch src/scss/styles.scss:dist/css/styles.css src/scss/styles.scss:dist/css/styles.min.css --style=compressed",
+    "dev": "npm run watch",
     "format": "prettier --write '**/*.{scss,css,js,json,md}'",
     "lint": "stylelint '**/*.scss'",
     "prepare": "husky install",
-    "prepublishOnly": "npm-run-all build build:min"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
