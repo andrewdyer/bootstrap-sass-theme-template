@@ -22,10 +22,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint SCSS
-        run: npm run lint
+      - name: Lint (check)
+        run: npm run lint:check
 
-      - name: Format check
+      - name: Format (check)
         run: npm run format:check
 
       - name: Build SCSS
