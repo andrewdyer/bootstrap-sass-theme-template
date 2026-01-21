@@ -6,26 +6,38 @@
 // 🧩 Purpose
 // - Defines the global load order for all Sass sources.
 // - Combines the Bootstrap framework and custom app styles into one output.
-// - Ensures design variables and overrides are applied before Bootstrap compiles.
+// - Ensures design variables and overrides are defined before Bootstrap
+//   components are compiled.
 
 // ⚙️ Build Output
 // - Compiled to `/dist/css/styles.css` via the Sass build process.
 // - Used by consuming projects to import a single prebuilt CSS file.
 
 // --------------------------------------------------------------------------
-// 1. Variables
+// 1. Prerequisites
+// --------------------------------------------------------------------------
+// Enables Bootstrap Sass function helpers (for example, `shade-color()`
+// and `tint-color()`) for use while defining app-level variables.
+
+// Include this import when variables in `app/_variables.scss` call any
+// Bootstrap Sass functions.
+
+// @import 'bootstrap/functions';
+
+// --------------------------------------------------------------------------
+// 2. Variables
 //    Custom theme tokens and Bootstrap variable overrides.
 // --------------------------------------------------------------------------
 @import 'app/variables';
 
 // --------------------------------------------------------------------------
-// 2. Bootstrap
+// 3. Bootstrap
 //    Vendored framework source (never edit directly).
 // --------------------------------------------------------------------------
 @import 'bootstrap/bootstrap';
 
 // --------------------------------------------------------------------------
-// 3. App
+// 4. App
 //    Project-specific styles, components, utilities, and extensions.
 // --------------------------------------------------------------------------
 @import 'app/app';
