@@ -15,6 +15,28 @@
 // - Never edit variables directly inside the vendored `bootstrap/` folder.
 
 // --------------------------------------------------------------------------
+// ⚠️ Dependency Rules
+// --------------------------------------------------------------------------
+// - Raw value overrides (hex, rem, numbers) require no Bootstrap imports.
+// - Using Bootstrap Sass functions (e.g. `shade-color()`, `tint-color()`)
+//   requires `bootstrap/functions` to be imported in `styles.scss`.
+// - Referencing Bootstrap variables (e.g. `$gray-300`, `$spacer`)
+//   requires `bootstrap/variables` to be imported below.
+
+// --------------------------------------------------------------------------
+// Bootstrap Variable Dependency
+// --------------------------------------------------------------------------
+// Provides access to Bootstrap's own Sass variables (for example,
+// `$gray-900`, `$blue`, or `$spacer`) while defining overrides or
+// custom design tokens.
+
+// This import is safe even though `bootstrap/bootstrap` also imports
+// the same file later, thanks to the use of `!default` in Bootstrap's
+// variable definitions.
+
+// @import '../bootstrap/variables';
+
+// --------------------------------------------------------------------------
 // 🔧 Bootstrap Variable Overrides
 // --------------------------------------------------------------------------
 
